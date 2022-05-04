@@ -75,7 +75,7 @@ export const Navbar = ({ user, totalProducts }) => {
                   </Link>
                 </li>
               ) : (
-                <span className="d-none"></span>
+                <span className="px-1"></span>
               )}
 
               <li className="nav-item pt-2 px-1">

@@ -80,10 +80,10 @@ code {
 
 .productDetailImg{
   background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 780px;
-    width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 480px;
+  width: 100%;
 }
 
 .unlinked{
@@ -132,6 +132,10 @@ code {
   border-color: #0d7debbd !important;
   color:#570debe3 !important;
   box-shadow: -6px 5px 9px 0px #160debc2;
+}
+
+.textalign{
+  text-align: end !important;
 }
 
 .bannnerOne{
@@ -274,4 +278,21 @@ code {
   top: -15px;
   right: -15px;
   cursor: pointer;
+}
+
+.productDtitle{
+  font-size: 40px;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+}
+
+.productDdesc{
+  font-size: 24px;
+  letter-spacing: 0.05rem;
+}
+
+.productDPrice{
+  font-size: 30px;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
 }

@@ -41,6 +41,7 @@ const IndividualProductDetails = () => {
     }, []);
     return user;
   }
+   
   const user = GetCurrentUser();
 
   console.log(uid);
@@ -62,33 +63,27 @@ const IndividualProductDetails = () => {
   return (
     <>
       <Navbar user={user} />
-      <div className="row w-100">
-        <div className="col-md-4">
-          <div
-            style={{ backgroundImage: `url(${backgroundProductImg})` }}
-            className="productDetailImg"
-          ></div>
-        </div>
-        <div className="col-md-8 my-5">
-          <div className="p-5">
-            <div className="mt-5">
-              <h3 className="productDtitle">{productDetail.title}</h3>
-            </div>
-            <div className="py-5">
-              <p className="productDdesc">{productDetail.description}</p>
-            </div>
-            <div className="">
-              <span className="productDPrice">${productDetail.price}</span>
+      <div className="container">
+        <div className="row w-100">
+          <div className="col-md-6">
+            <div
+              style={{ backgroundImage: `url(${backgroundProductImg})` }}
+              className="productDetailImg"
+            ></div>
+          </div>
+          <div className="col-md-6 my-5">
+            <div className="p-5">
+              <div className="mt-5">
+                <h3 className="productDtitle">{productDetail.title}</h3>
+              </div>
+              <div className="py-5">
+                <p className="productDdesc">{productDetail.description}</p>
+              </div>
+              <div className="">
+                <span className="productDPrice">₹{productDetail.price}</span>
+              </div>
             </div>
           </div>
-          {/* <div className="row px-5 w-50">
-                        <div className="col-md-6">
-                            <button type="button" class="btn btn-primary" onClick={handelAddToCart}>Add to Cart</button>
-                        </div>
-                        <div className="col-md-6">
-                            <button type="button" class="btn btn-primary" onClick={handelWishlist}>Wishlist</button>
-                        </div>
-                    </div> */}
         </div>
       </div>
     </>

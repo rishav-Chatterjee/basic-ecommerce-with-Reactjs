@@ -24,7 +24,7 @@ export const IndividualProduct = ({ individualProduct, addToCart }) => {
               {individualProduct.description}
             </p>
             <p className="card-text productPrice m-1">
-              $ {individualProduct.price}
+              ₹ {individualProduct.price}
             </p>
           </div>
         </div>
