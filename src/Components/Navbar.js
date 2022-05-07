@@ -59,7 +59,7 @@ export const Navbar = ({ user, totalProducts }) => {
                   {user}
                 </Link>
               </li>
-              <li className="nav-item pt-1">
+              <li className="nav-item pt-2">
                 <Link className="nav-link text-white" to="usercart">
                   <FontAwesomeIcon icon={faShoppingCart} />
                   {totalProducts > 0 && (
@@ -67,7 +67,7 @@ export const Navbar = ({ user, totalProducts }) => {
                   )}
                 </Link>
               </li>
-              {user === "Admin" ? (
+              {user === "admin" ? (
                 <li className="nav-item pt-2 px-1">
                   <Link className="nav-link text-white" to="addproduct">
                     {" "}
